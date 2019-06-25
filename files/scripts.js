@@ -1,4 +1,4 @@
-$('.grid').isotope({
+var $grid = $('.grid').isotope({
   itemSelector: '.grid-item',
   percentPosition: true,
   masonry: {
@@ -12,3 +12,8 @@ $('.grid').isotope({
     var filterValue = $(this).attr('data-filter');
     $('.grid').isotope({ filter: filterValue });
   });
+
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});  

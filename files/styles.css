@@ -6,10 +6,15 @@
 	box-sizing: border-box;
 }
 
-h1, a {
+h1, p, a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: rgb(28, 54, 68);
+}
+
+section {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .logo {
@@ -17,14 +22,17 @@ h1, a {
   margin-right: 10px;
 }
 
-img{
+.lightbox {
     max-width: 100%;
     display: block;
-    height: auto;
+	height: auto;
 }
 
+.lightbox:hover {
+	opacity: 0.5;
+}
 
-.grid-sizer,.grid-item{
+.grid-sizer,.grid-item {
 	width: 50%;
 	margin: 0px;
 	padding: 0px;
@@ -33,26 +41,64 @@ img{
 	margin-bottom:0px;
 }
 
-@media only screen and (min-width:580px){
+.img-car {
+	height: auto;
+	max-height: 75%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	outline: black;
+}
+
+@media only screen and (min-width:500px){
 	.grid-sizer,.grid-item{
 	width: 50%;
-	margin: 0px;
-	padding: 0px;
-	vertical-align: center;
-	padding: 10px;
-	margin-bottom: 20px;
-}
-
-}
-
-@media only screen and (min-width:767px){
-	.grid-sizer,.grid-item{
-	width:33.33%;
 	margin: 0px;
 	padding: 0px;
 	vertical-align: center;
 	padding: 2px;
 	margin-bottom: 0px;
 }
+
+	.grid-item--width2 {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: center;
+	padding: 2px;
+	margin-bottom: 0px;
+	}
+
+}
+
+@media only screen and (min-width:767px){
+	.grid-sizer,.grid-item{
+	width:25%;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: center;
+	padding: 2px;
+	margin-bottom: 0px;
+}
+
+	.grid-item--width2 {
+	width: 50%;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: center;
+	padding: 2px;
+	margin-bottom: 0px;
+	}
+
+	.grid-item--width3 {
+	width: 75%;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: center;
+	padding: 2px;
+	margin-bottom: 0px;
+	}
+	
 
 }
