@@ -8,8 +8,13 @@
 
 h1, p, a {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: rgb(28, 54, 68);
+    font-weight: 600;
+    color: rgb(28, 54, 68) !important;
+}
+
+.navbar-toggler,
+.navbar-toggler-icon {
+	color: rgb(28, 54, 68);
 }
 
 section {
@@ -57,16 +62,17 @@ section {
 	margin: 0px;
 	padding: 0px;
 	vertical-align: center;
-	padding: 2px;
+	padding: 6px;
 	margin-bottom: 0px;
 }
 
-	.grid-item--width2 {
+	.grid-item--width2,
+	.grid-item--width3 {
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
 	vertical-align: center;
-	padding: 2px;
+	padding: 6px;
 	margin-bottom: 0px;
 	}
 
@@ -78,7 +84,7 @@ section {
 	margin: 0px;
 	padding: 0px;
 	vertical-align: center;
-	padding: 2px;
+	padding: 6px;
 	margin-bottom: 0px;
 }
 
@@ -87,7 +93,7 @@ section {
 	margin: 0px;
 	padding: 0px;
 	vertical-align: center;
-	padding: 2px;
+	padding: 6px;
 	margin-bottom: 0px;
 	}
 
@@ -96,7 +102,7 @@ section {
 	margin: 0px;
 	padding: 0px;
 	vertical-align: center;
-	padding: 2px;
+	padding: 6px;
 	margin-bottom: 0px;
 	}
 	
