@@ -22,6 +22,12 @@ section {
 	margin-right: 10px;
 }
 
+.modal {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
 .logo {
   border-radius: 50%;
   margin-right: 10px;
@@ -36,6 +42,7 @@ section {
 .lightbox:hover {
 	opacity: 0.5;
 }
+
 
 .grid-sizer,.grid-item {
 	width: 50%;
@@ -105,6 +112,9 @@ section {
 	padding: 6px;
 	margin-bottom: 0px;
 	}
-	
+
+	.modal-xl {
+		max-width: 60%;
+	}
 
 }
